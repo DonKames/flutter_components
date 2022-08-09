@@ -26,16 +26,16 @@ class AppRoutes {
       icon: Icons.abc,
     ),
     MenuOption(
-      route: 'alert',
-      name: 'Alertas - Alerts',
-      screen: const AlertScreen(),
-      icon: Icons.crisis_alert,
-    ),
-    MenuOption(
       route: 'card',
       name: 'Tarjetas - Cards',
       screen: const CardScreen(),
       icon: Icons.card_membership,
+    ),
+    MenuOption(
+      route: 'alert',
+      name: 'Alertas - Alerts',
+      screen: const AlertScreen(),
+      icon: Icons.crisis_alert,
     ),
   ];
 
