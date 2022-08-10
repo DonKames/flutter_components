@@ -15,15 +15,18 @@ class CardScreen extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
         children: const [
           CustomCardType1(),
-          SizedBox(height: 10),
+          SizedBox(height: 20),
+          CustomCardType2(
+            imageUrl:
+                'https://mymodernmet.com/wp/wp-content/uploads/2022/02/international-landscape-photographer-awards-20.jpeg',
+            name: 'test1',
+          ),
+          SizedBox(height: 20),
           CustomCardType2(
               imageUrl:
-                  'https://mymodernmet.com/wp/wp-content/uploads/2022/02/international-landscape-photographer-awards-20.jpeg'),
-          SizedBox(height: 10),
-          CustomCardType2(
-              imageUrl:
-                  'https://media-exp2.licdn.com/dms/image/C561BAQGEbvT3SFyR9Q/company-background_10000/0/1582050035728?e=2147483647&v=beta&t=lxt09r99nB70MdZRGsnwgcBbBYkPuiIEIRf2Vk9lSb8'),
-          SizedBox(height: 10),
+                  'https://media-exp2.licdn.com/dms/image/C561BAQGEbvT3SFyR9Q/company-background_10000/0/1582050035728?e=2147483647&v=beta&t=lxt09r99nB70MdZRGsnwgcBbBYkPuiIEIRf2Vk9lSb8',
+              name: null),
+          SizedBox(height: 20),
           CustomCardType2(
               imageUrl:
                   'https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg'),

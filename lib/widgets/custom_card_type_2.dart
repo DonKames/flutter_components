@@ -4,8 +4,9 @@ import 'package:flutter/material.dart';
 
 class CustomCardType2 extends StatelessWidget {
   final String imageUrl;
+  final String? name;
 
-  const CustomCardType2({super.key, required this.imageUrl});
+  const CustomCardType2({super.key, required this.imageUrl, this.name});
 
   @override
   Widget build(BuildContext context) {
@@ -24,11 +25,12 @@ class CustomCardType2 extends StatelessWidget {
             fit: BoxFit.cover,
             fadeInDuration: const Duration(milliseconds: 200),
           ),
-          Container(
-            alignment: AlignmentDirectional.centerEnd,
-            padding: const EdgeInsets.only(right: 20, top: 10, bottom: 10),
-            child: const Text('Un hermoso paisaje'),
-          )
+          if (name != null)
+            Container(
+              alignment: AlignmentDirectional.centerEnd,
+              padding: const EdgeInsets.only(right: 20, top: 10, bottom: 10),
+              child: Text(name!),
+            )
         ],
       ),
     );
